@@ -1,0 +1,11 @@
+.Main {
+    padding: 0 20rem;
+    background: linear-gradient(180deg, rgb(0,2,2,1) 0%, rgb(13,28,44) 15%);
+    display: flex;
+}
+
+@media only screen and (max-width: 1600px) {
+    .Main {
+        padding: 0 5rem;
+    }
+}

@@ -1,0 +1,15 @@
+.Footer {
+    height: 15rem;
+    padding: 3rem 20rem 0;
+    text-align: right;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+    background-color: rgb(13,28,44);
+}
+
+@media only screen and (max-width: 1600px) {
+    .Footer {
+        padding: 3rem 5rem 0;
+    }
+}

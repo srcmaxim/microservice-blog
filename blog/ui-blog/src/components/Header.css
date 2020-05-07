@@ -1,0 +1,36 @@
+.Header {  
+    height: 65px;
+    padding: 0 20rem;
+
+    line-height: 65px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1600px) {
+    .Header {
+        padding: 0 5rem;
+    }
+}
+
+.Header-logo {
+    display: inline-block;
+}
+
+nav, ul, li  {
+    float: right;
+    margin: 0;
+}
+
+li {
+    display: block;
+    float: left;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.Header-hover, li:hover {
+    border-bottom: 4px solid #FF004A;
+}
