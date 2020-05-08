@@ -1,18 +1,18 @@
 .Article {
-    flex: 1;
+    flex: 3;
     font-size: 1.3rem;
 }
 
-.Article > :first-child {
+.Article > :nth-child(1) {
+    margin-top: 0px;
+}
+
+.Article-header {
     margin-top: 0;
     font-size: 3rem;
 }
 
 .Article > :last-child {
     margin-bottom: 3rem;
-}
-
-p {
-    word-spacing: 0.2rem;
 }
   

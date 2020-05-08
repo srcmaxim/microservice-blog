@@ -1,12 +1,11 @@
 .Header {  
-    height: 65px;
-    padding: 0 20rem;
+    height: 85px;
+    padding: 0 25rem;
 
-    line-height: 65px;
-    color: #fff;
-    font-size: 1.5rem;
+    line-height: 85px;
+    font-size: 2rem;
     font-weight: 200;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -28,9 +27,19 @@ li {
     display: block;
     float: left;
     position: relative;
-    margin-left: 1rem;
 }
 
-.Header-hover, li:hover {
+.Header-active {
     border-bottom: 4px solid #FF004A;
+}
+
+.Header-link:hover {
+    border-bottom: 4px solid #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    text-underline-position: under;
 }

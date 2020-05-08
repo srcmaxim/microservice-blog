@@ -1,15 +1,33 @@
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
-  background: rgb(0,0,0);
-  color: #fff;
+  background: #fff;
+  color: #000;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
+
+  padding-left: calc(100vw - 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
   /* border: 0.1px solid red; */
   font-family: 'Open Sans', Arial, sans-serif;
 }
+
+.h1 {
+  line-height: 2.5rem;
+}
+
+p {
+  font-weight: 300;
+  word-spacing: 0.2rem;
+}
+
+/* html {
+  overflow-y: scroll;
+} */
 
 * {
   /* border: 0.1px solid red; */

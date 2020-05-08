@@ -1,7 +1,6 @@
 .Aside {
-    text-align: left;
-    width: 30%;
-    max-width: 350px;
+    margin-top: 0px;
+    flex: 1;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -9,19 +8,19 @@
         display: none;
     }
 }
-  
-.Aside > h1 {
-    margin-top: 0.56rem;
+
+.Aside > :nth-child(1) {
+    margin-top: 0px;
 }
 
-.Aside > h2 {
-    margin-left: 0;
+aside > p {
+    font-size: 1.3rem;
 }
 
-.Aside > h3 {
+.h2 {
     margin-left: 1rem;
 }
 
-.Aside > h4 {
+.h3 {
     margin-left: 2rem;
 }
