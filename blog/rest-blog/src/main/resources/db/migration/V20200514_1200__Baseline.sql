@@ -1,7 +1,7 @@
 CREATE TABLE post
 (
-    id VARCHAR(30) PRIMARY KEY NOT NULL,
-    title VARCHAR(30) UNIQUE NOT NULL,
+    id VARCHAR(100) PRIMARY KEY NOT NULL,
+    title VARCHAR(100) UNIQUE NOT NULL,
     description TEXT,
     content TEXT NOT NULL,
     read_minutes INT NOT NULL CHECK (read_minutes>=1),
@@ -10,6 +10,6 @@ CREATE TABLE post
 
 CREATE TABLE tag
 (
-    post_id VARCHAR(30) NOT NULL,
+    post_id VARCHAR(100) NOT NULL,
     tag_name VARCHAR(30) NOT NULL
 );

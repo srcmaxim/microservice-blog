@@ -43,6 +43,7 @@ public class PostResource {
     @Path("/{id}")
     public Response getPost(@PathParam("id") String id) {
         Post post = service.findPostById(id);
+        
         if (post != null) {
             LOGGER.debug("Found post " + post);
             return Response.ok(post).build();

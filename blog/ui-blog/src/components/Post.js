@@ -18,10 +18,7 @@ class Post extends React.Component {
             }
         }).then(res => {
             const post = res.data;
-            axios.get(post.contentUrl).then(res => {
-                const content = res.data;
-                this.setState({ post: { ...post, content} });
-            })
+            this.setState({ post });
         })
     }
 

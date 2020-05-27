@@ -33,9 +33,7 @@ public class PostService {
     public Post updatePost(@Valid Post post) {
         Post entity = Post.findById(post.id);
         entity.title = post.title;
-        entity.description = post.description;
         entity.content = post.content;
-        entity.contentUrl = post.contentUrl;
         entity.readMinutes = post.readMinutes;
         entity.publishDate = post.publishDate;
         entity.tags = post.tags;

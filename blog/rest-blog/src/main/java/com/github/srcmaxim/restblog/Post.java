@@ -10,6 +10,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -19,16 +20,13 @@ import java.util.Objects;
 public class Post extends PanacheEntityBase {
 
     @NotNull
-    @Size(min = 5, max = 30)
+    @Size(min = 5, max = 100)
     @Id
     public String id;
 
     @NotNull
-    @Size(min = 5, max = 30)
+    @Size(min = 5, max = 100)
     public String title;
-
-    @Column(columnDefinition = "TEXT")
-    public String description;
 
     @NotNull
     @NotBlank
@@ -47,7 +45,7 @@ public class Post extends PanacheEntityBase {
     @Fetch(FetchMode.SUBSELECT)
     @CollectionTable(name = "tag", joinColumns = @JoinColumn(name = "post_id"))
     @Column(name = "tag_name")
-    public List<String> tags;
+    public List<String> tags = new ArrayList<>();
 
     public Post() {
     }
@@ -70,7 +68,6 @@ public class Post extends PanacheEntityBase {
         return "Post{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
                 ", readMinutes=" + readMinutes +
                 ", tags='" + tags + '\'' +
                 ", publishDate='" + publishDate + '\'' +

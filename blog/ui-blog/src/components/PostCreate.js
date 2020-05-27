@@ -33,8 +33,10 @@ class PostCreate extends React.Component {
     getData() {
         return {
             ...this.state,
-            publishDate: new Date().toISOString(),
-            readMinutes: (this.state.content.split(/\s+/) + 280)/ 280
+            id: this.state.title.split(/\s+/).join('-').toLowerCase(),
+            tags: this.state.tags.split(/\s+/),
+            publishDate: new Date().toISOString().substring(0,10),
+            readMinutes: Math.ceil(this.state.content.split(/\s+/).length / 280)
         }
     }
 
