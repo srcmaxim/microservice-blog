@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className="Footer">
-        created by Koval Maksym
+        by <a href="https://github.com/srcmaxim">Koval Maksym</a>
         </footer>
     );
 }

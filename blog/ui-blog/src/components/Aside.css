@@ -1,15 +1,15 @@
-.Aside {
+#Aside {
     margin-top: 0px;
     flex: 1;
 }
 
 @media only screen and (max-width: 1000px) {
-    .Aside {
+    #Aside {
         display: none;
     }
 }
 
-.Aside > :nth-child(1) {
+#Aside > :nth-child(1) {
     margin-top: 0px;
 }
 
@@ -17,10 +17,10 @@ aside > p {
     font-size: 1.3rem;
 }
 
-.h2 {
+.h3 {
     margin-left: 1rem;
 }
 
-.h3 {
+.h4 {
     margin-left: 2rem;
 }

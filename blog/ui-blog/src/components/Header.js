@@ -8,12 +8,12 @@ function Header() {
           <div className="Header-logo">
           KOVAL MAKSYM 🌄
           </div>
-          <Redirect from="/" to="/blog" />
-          <nav>
+          {/* <Redirect from="/" exact to="/blog" /> */}
+          <nav className="Header-nav">
             <ul>
-              <li><NavLink  to="/blog" exact={true} className="Header-link" activeClassName="Header-active">BLOG</NavLink></li>
+              <li><NavLink  to="/blog"  className="Header-link" activeClassName="Header-active">BLOG</NavLink></li>
               <li><NavLink  to="/projects" className="Header-link" activeClassName="Header-active">PROJECTS</NavLink></li>
-              <li><NavLink  to="/about" className="Header-link" activeClassName="Header-active">ABOUT</NavLink></li>
+              <li><NavLink  to="/about" className="Header-link Header-last-link" activeClassName="Header-active">ABOUT</NavLink></li>
             </ul>
           </nav>
         </header>

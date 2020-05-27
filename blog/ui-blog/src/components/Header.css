@@ -18,7 +18,7 @@
     display: inline-block;
 }
 
-nav, ul, li  {
+nav, ul  {
     float: right;
     margin: 0;
 }
@@ -33,13 +33,14 @@ li {
     border-bottom: 4px solid #FF004A;
 }
 
+.Header-last-link {
+    padding-right: 0px;
+}
+
 .Header-link:hover {
     border-bottom: 4px solid #000;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
+.Header-link {
     padding: 0 0.5rem;
-    text-underline-position: under;
 }

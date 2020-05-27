@@ -2,13 +2,13 @@ import React from 'react';
 import './Main.css';
 
 import Aside from './Aside';
-import Article from './Article';
+import Content from './Content';
 
 function Main() {
     return (
         <main className="Main">
             <Aside/>
-            <Article/>
+            <Content/>
         </main>
     );
 }
