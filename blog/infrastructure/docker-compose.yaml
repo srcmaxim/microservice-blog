@@ -1,0 +1,11 @@
+version: "3"
+services:
+    database:
+        image: "postgres:12.2-alpine"
+        container_name: "post-database"
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./db-init/initialize-databases.sql:/docker-entrypoint-initdb.d/init.sql
+        environment:
+            POSTGRES_PASSWORD: post-database
