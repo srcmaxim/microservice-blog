@@ -19,8 +19,6 @@ import java.util.Objects;
 @Table(name = "post")
 public class Post extends PanacheEntityBase {
 
-    @NotNull
-    @Size(min = 5, max = 100)
     @Id
     public String id;
 
