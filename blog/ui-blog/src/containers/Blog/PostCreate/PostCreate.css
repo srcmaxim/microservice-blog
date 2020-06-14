@@ -1,0 +1,45 @@
+#content {
+	width: 100%;
+	box-sizing: border-box;
+    padding: 0 0 0 1rem;
+
+    border: none;
+    border-left: 3px solid #000;
+    
+    font-weight: 300;
+    resize: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 16px 0;
+
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+label {
+    font-weight: 300
+}
+
+#title {
+    border: 0px;
+    font-weight: 400;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    max-width: 100%;
+    padding: 0px;
+}
+
+#tags {
+    border: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 100%;
+    font-weight: 300;
+}
+
+span {
+    margin: 16px 0;
+}

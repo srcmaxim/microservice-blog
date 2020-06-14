@@ -1,0 +1,7 @@
+.Post-title-link, .Post-link, .Post-title {
+    display: inline-block;
+}
+
+.Post-meta {
+    margin-top: 0;
+}

@@ -1,5 +1,21 @@
 .App {
-  width: 100%;
+  max-width: 1000px;
+  margin: 0.5rem auto 0;
+  width: calc(100% * 0.6 + 3rem);
   height: 100%;
   overflow: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    width: auto;
+    margin: 2rem 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: auto;
+    margin: 0.5rem 0.5rem 0;
+  }
 }

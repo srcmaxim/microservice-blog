@@ -1,0 +1,16 @@
+.Main {margin-bottom: 3rem;
+    display: flex;
+}
+
+@media only screen and (max-width: 1300px) {
+    .Main {
+        /* padding: 0 5rem; */
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Main {
+        /* padding: 0 0.5rem; */
+        margin-bottom: 0.5rem;
+    }
+}

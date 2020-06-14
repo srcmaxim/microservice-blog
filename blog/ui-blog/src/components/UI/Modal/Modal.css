@@ -1,0 +1,28 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 1000px;
+    width: calc(100% * 0.6 + 3rem);
+}
+
+@media (max-width: 900px) {
+    .Modal {
+        width: calc(100% - 4rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .Modal {
+        width: calc(100% - 1rem);
+    }
+}

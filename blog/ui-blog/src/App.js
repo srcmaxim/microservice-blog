@@ -1,21 +1,12 @@
 import React from 'react';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
 import './App.css';
 
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
     <div className="App">
-        <Router>
-          <Header/>
-          <Main/>
-          <Footer/>
-        </Router>
+        <Layout/>
     </div>
   );
 }

@@ -1,0 +1,67 @@
+.Header {  
+    height: 85px;
+
+    line-height: 85px;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 2.5rem;
+}
+
+.Header-logo {
+    display: inline-block;
+}
+
+.Header-nav, .Header-nav ul  {
+    float: right;
+    margin: 0;
+}
+
+.Header-nav ul {
+    padding-left: 0px;
+}
+
+.Header-nav li {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.Header-active {
+    border-bottom: 4px solid #FF004A;
+}
+
+.Header-link:hover {
+    border-bottom: 4px solid #000;
+}
+
+.Header-link {
+    padding: 0 0.5rem;
+}
+
+.Header-first-link {
+    padding-left: 0px;
+}
+.Header-last-link {
+    padding-right: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Header {
+        line-height: 4rem;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Header {
+        line-height: 1.5rem;
+    }
+    .Header-logo {
+        display: block;
+    }
+    .Header-nav  {
+        display: block;
+        float: left;
+    }
+}
