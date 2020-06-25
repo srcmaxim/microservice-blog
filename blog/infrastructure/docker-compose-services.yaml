@@ -1,0 +1,17 @@
+version: "3"
+services:
+    rest-blog:
+        image: "rest-blog-jvm"
+        container_name: "rest-blog"
+        ports:
+            - "8080:8080"
+        environment:
+            QUARKUS_DATASOURCE_URL: "jdbc:postgresql://database:5432/posts_database"
+    ui-blog:
+        image: "ui-blog-serve"
+        container_name: "ui-blog"
+        ports:
+            - "3000:3000"
+#       environment:
+#           REACT_APP_BLOG_API: "http://rest-blog/api/blog"
+#           REACT_APP_BLOG_API: "http://localhost:8080/api/blog"

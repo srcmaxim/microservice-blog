@@ -1,10 +1,5 @@
 describe('App e2e tests', () => {
     context('Visit Blog', () => {
-        it('Open Post', () => {
-            cy.visit(Cypress.env('WEB_APP'));
-            cy.get('#post-name-10').click({force: true});
-            cy.url().should('eq', `${Cypress.env('WEB_APP')}/blog/post-name-10`);
-        })
         it('Create Post', () => {
             cy.visit(Cypress.env('WEB_APP'));
             cy.get('#post-create').scrollIntoView();
@@ -14,6 +9,11 @@ describe('App e2e tests', () => {
             cy.get('#content').type("##Hello Post content\n\nHello Post  \n\nHello Post");
             cy.get('#tags').type('hello post');
             cy.get('span > #post-create').click({force: true});
+            cy.url().should('eq', `${Cypress.env('WEB_APP')}/blog/hello-post`);
+        })
+        it('Open Post', () => {
+            cy.visit(Cypress.env('WEB_APP'));
+            cy.get('#hello-post').click({force: true});
             cy.url().should('eq', `${Cypress.env('WEB_APP')}/blog/hello-post`);
         })
         it('Update Post', () => {
@@ -39,7 +39,6 @@ describe('App e2e tests', () => {
             cy.get('span > #post-delete').click({force: true});
             cy.url().should('eq', `${Cypress.env('WEB_APP')}/blog`);
             cy.visit(Cypress.env('WEB_APP'));
-            cy.get('#post-name-10').should('exist');
             cy.get('#hello-post').should('not.exist');
         })
     })
